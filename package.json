@@ -1,6 +1,6 @@
 {
   "name": "seqin-sy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The base class for all Seqin synths",
   "main": "SynthSeqin.js",
   "directories": {
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loopdotcoop/seqin.git"
+    "url": "git+https://github.com/loopdotcoop/seqin-sy.git"
   },
   "keywords": ["seqin", "web audio", "synth", "synthesiser", "synthesizer"],
   "author": "Rich Plastow<rich@loop.coop>, Monty Anderson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loopdotcoop/seqin/issues"
+    "url": "https://github.com/loopdotcoop/seqin-sy/issues"
   },
-  "homepage": "http://seqin.loop.coop"
+  "homepage": "https://loopdotcoop.github.io/seqin-sy/"
 }

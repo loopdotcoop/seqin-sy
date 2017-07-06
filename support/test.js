@@ -2,7 +2,6 @@
 //// You’ll need to install mocha and chai first.
 
 ////
-const assert = require('chai')
 require('seqin-si')
 require('../SynthSeqin')
 
