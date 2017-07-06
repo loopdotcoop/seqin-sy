@@ -3,7 +3,7 @@
 const META = {
     NAME:    { value:'SeqinSynth' }
   , ID:      { value:'sy'       }
-  , VERSION: { value:'0.0.1'    }
+  , VERSION: { value:'0.0.2'    }
   , SPEC:    { value:'20170705' }
   , HELP:    { value:
 `The base class for all Seqin synths. It’s not usually used directly -
