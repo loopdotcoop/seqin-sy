@@ -4,14 +4,14 @@ const
     isBrowser  = 'object' === typeof window
   , a          = isBrowser ? assert : require('chai').assert
   , eq         = a.strictEqual
-  , SeqinSynth = SEQIN.SeqinSynth
+  , SynthSeqin = SEQIN.SynthSeqin
 
 
 //// This can be copy-pasted from the main script.
 const META = {
-    NAME:    { value:'SeqinSynth' }
+    NAME:    { value:'SynthSeqin' }
   , ID:      { value:'sy'       }
-  , VERSION: { value:'0.0.2'    }
+  , VERSION: { value:'0.0.3'    }
   , SPEC:    { value:'20170705' }
   , HELP:    { value:
 `The base class for all Seqin synths. It’s not usually used directly -
@@ -19,15 +19,15 @@ it’s a very rudimentary synthesiser.` }
 }
 
 
-describe('SeqinSynth (isomorphic)', () => {
+describe('SynthSeqin (isomorphic)', () => {
 
 	describe('META', () => {
 
         ['NAME','ID','VERSION','SPEC','HELP'].map( key => {
             const val = META[key].value
             const shortval = 60<(''+val).length ? val.substr(0,59)+'…' : ''+val
-        	it(`SeqinSynth.${key} is "${shortval}"`, () => {
-        		eq(SeqinSynth[key], val)
+        	it(`SynthSeqin.${key} is "${shortval}"`, () => {
+        		eq(SynthSeqin[key], val)
         	})
         })
 

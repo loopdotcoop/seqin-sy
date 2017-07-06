@@ -4,6 +4,6 @@
 ////
 const assert = require('chai')
 require('seqin-si')
-require('../SeqinSynth')
+require('../SynthSeqin')
 
 require('./test-isomorphic')
