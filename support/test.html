@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Search engine meta -->
-<title>SynthSeqin</title>
-<meta name="description" content="SynthSeqin unit tests">
+<title>MathSeqin</title>
+<meta name="description" content="MathSeqin unit tests">
 <link rel="author" href="../README.md">
 
 <!-- Mocha -->
@@ -41,17 +41,28 @@ body {
 </head>
 <body>
 
-<h1><a href="../index.html">SynthSeqin</a></h1>
+<h1><a href="../index.html">SynthSeqin 0.0.5 Test</a></h1>
 
 <div id="mocha"></div>
 
 <script>
-mocha.setup('bdd');
-const assert = chai.assert;
+mocha.setup('bdd')
+window.TestClassName = 'SynthSeqin'
+window.TestMeta = {
+//// This has been copy-pasted from the main script:
+    NAME:    { value:'SynthSeqin' }
+  , ID:      { value:'sy'         }
+  , VERSION: { value:'0.0.5'      }
+  , SPEC:    { value:'20170705'   }
+  , HELP:    { value:
+`The base class for all Seqin synths. It’s not usually used directly -
+it’s a very rudimentary synthesiser.` }
+}
 </script>
 
-<script src="test-isomorphic.js"></script>
-<script src="test-browser.js"></script>
+<script src="https://rawgit.com/loopdotcoop/seqin/master/support/test-common-isomorphic.js"></script>
+<script src="https://rawgit.com/loopdotcoop/seqin/master/support/test-common-browser.js"></script>
+<script src="test-specific-browser.js"></script>
 
 <script>
 mocha.run();

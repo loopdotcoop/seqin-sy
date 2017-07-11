@@ -18,8 +18,8 @@ Built by Rich Plastow and Monty Anderson for Loop.Coop.
 
 App
 ---
-+ __Last update:__  2017/07/06
-+ __Version:__      0.0.4
++ __Last update:__  2017/07/11
++ __Version:__      0.0.5
 
 
 Tested
@@ -37,3 +37,4 @@ Changelog
 + 0.0.2       Add node_modules/seqin-si to the repo, for online usage
 + 0.0.3       Rename SeqinSynth -> SynthSeqin
 + 0.0.4       test.html uses CDN instead of node_modules
++ 0.0.5       Brought in line with MathSeqin 0.0.2

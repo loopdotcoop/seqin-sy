@@ -3,7 +3,7 @@
 const META = {
     NAME:    { value:'SynthSeqin' }
   , ID:      { value:'sy'         }
-  , VERSION: { value:'0.0.4'      }
+  , VERSION: { value:'0.0.5'      }
   , SPEC:    { value:'20170705'   }
   , HELP:    { value:
 `The base class for all Seqin synths. It’s not usually used directly -
@@ -19,9 +19,23 @@ if (! SEQIN.Seqin) throw new Error('The base SEQIN.Seqin class does not exist')
 SEQIN.SynthSeqin = class extends SEQIN.Seqin {
 
     constructor (config) {
-
+        super(config)
     }
 
+
+    getBuffers(config) {
+
+        //// Validate config and get empty buffers.
+        const buffers = super.getBuffers(config)
+
+        ////@TODO generate a basic synthy sound
+        buffers.map( buffer => {
+            buffer.id = 'sy'
+        })
+
+        return buffers
+
+    }
 }
 
 
