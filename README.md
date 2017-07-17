@@ -2,7 +2,7 @@
 
 #### The base class for all Seqin synths.
 
-It’s not usually used directly - it’s a very rudimentary synthesiser.
+It’s not usually used directly - it just generates silent buffers.
 
 
 Authors
@@ -18,8 +18,8 @@ Built by Rich Plastow and Monty Anderson for Loop.Coop.
 
 App
 ---
-+ __Last update:__  2017/07/11
-+ __Version:__      0.0.5
++ __Last update:__  2017/07/17
++ __Version:__      0.0.6
 
 
 Tested
@@ -38,3 +38,4 @@ Changelog
 + 0.0.3       Rename SeqinSynth -> SynthSeqin
 + 0.0.4       test.html uses CDN instead of node_modules
 + 0.0.5       Brought in line with MathSeqin 0.0.2
++ 0.0.6       Brought in line with MathSeqin 0.0.5

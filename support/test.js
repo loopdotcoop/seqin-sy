@@ -1,5 +1,7 @@
 //// This is the test entry-point for Node.js.
-//// You’ll need to install mocha and chai first.
+//// You’ll need to install mocha and chai first:
+//// $ npm install mocha --global
+//// $ npm install chai --global
 
 //// Define `TestClassName` and `TestMeta` for './test-common-isomorphic.js'.
 global.TestClassName = 'SynthSeqin'
@@ -7,11 +9,16 @@ global.TestMeta = {
 //// This has been copy-pasted from the main script:
     NAME:    { value:'SynthSeqin' }
   , ID:      { value:'sy'         }
-  , VERSION: { value:'0.0.5'      }
+  , VERSION: { value:'0.0.6'      }
   , SPEC:    { value:'20170705'   }
   , HELP:    { value:
 `The base class for all Seqin synths. It’s not usually used directly -
-it’s a very rudimentary synthesiser.` }
+it just generates silent buffers.` }
+}
+
+//// Polyfill `performance.now()`.
+global.performance = {
+    now: () => { const hr = process.hrtime(); return hr[0] * 1e4 + hr[1] / 1e6 }
 }
 
 //// Load Seqin, the base class.
