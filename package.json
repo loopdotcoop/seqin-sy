@@ -1,13 +1,13 @@
 {
   "name": "seqin-sy",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "The base class for all Seqin synths",
   "main": "SynthSeqin.js",
   "directories": {
     "example": "support"
   },
   "dependencies": {
-    "seqin-si": "^0.0.11"
+    "seqin-si": "^0.0.13"
   },
   "devDependencies": {
   },

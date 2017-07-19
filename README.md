@@ -18,8 +18,8 @@ Built by Rich Plastow and Monty Anderson for Loop.Coop.
 
 App
 ---
-+ __Last update:__  2017/07/17
-+ __Version:__      0.0.6
++ __Last update:__  2017/07/19
++ __Version:__      0.0.7
 
 
 Tested
@@ -39,3 +39,4 @@ Changelog
 + 0.0.4       test.html uses CDN instead of node_modules
 + 0.0.5       Brought in line with MathSeqin 0.0.2
 + 0.0.6       Brought in line with MathSeqin 0.0.5
++ 0.0.7       Better use of Promises
